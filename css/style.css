@@ -974,7 +974,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section Updates */
 .hero {
-  background: linear-gradient(180deg, var(--navy) 0%, #0d1a2d 50%, var(--navy) 100%);
+  background-image: url('../images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .hero__tagline {
