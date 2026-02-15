@@ -7,23 +7,25 @@ document.addEventListener('DOMContentLoaded', function() {
   // Mobile Navigation Toggle
   const navbarToggle = document.querySelector('.navbar__toggle');
   const navbarNav = document.querySelector('.navbar__nav');
+  const navbarBackdrop = document.querySelector('.navbar__backdrop');
   
   if (navbarToggle && navbarNav) {
     navbarToggle.addEventListener('click', function() {
-      navbarNav.classList.toggle('active');
-      
-      // Animate hamburger
-      const spans = navbarToggle.querySelectorAll('span');
-      if (navbarNav.classList.contains('active')) {
-        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-        spans[1].style.opacity = '0';
-        spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
-      } else {
-        spans[0].style.transform = 'none';
-        spans[1].style.opacity = '1';
-        spans[2].style.transform = 'none';
-      }
+      const isActive = navbarNav.classList.toggle('active');
+      navbarToggle.classList.toggle('active', isActive);
+      navbarBackdrop.classList.toggle('active', isActive);
+      document.body.style.overflow = isActive ? 'hidden' : '';
     });
+    
+    // Close menu when clicking backdrop
+    if (navbarBackdrop) {
+      navbarBackdrop.addEventListener('click', function() {
+        navbarNav.classList.remove('active');
+        navbarToggle.classList.remove('active');
+        navbarBackdrop.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    }
     
     // Close menu when clicking a link
     const navLinks = navbarNav.querySelectorAll('.navbar__link');
@@ -31,10 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
       link.addEventListener('click', function() {
         if (window.innerWidth <= 992) {
           navbarNav.classList.remove('active');
-          const spans = navbarToggle.querySelectorAll('span');
-          spans[0].style.transform = 'none';
-          spans[1].style.opacity = '1';
-          spans[2].style.transform = 'none';
+          navbarToggle.classList.remove('active');
+          navbarBackdrop.classList.remove('active');
+          document.body.style.overflow = '';
         }
       });
     });
