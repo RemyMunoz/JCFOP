@@ -3,43 +3,44 @@
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', function() {
-  
+
   // Mobile Navigation Toggle
   const navbarToggle = document.querySelector('.navbar__toggle');
   const navbarNav = document.querySelector('.navbar__nav');
-  
+  const navbarBackdrop = document.querySelector('.navbar__backdrop');
+
   if (navbarToggle && navbarNav) {
     navbarToggle.addEventListener('click', function() {
-      navbarNav.classList.toggle('active');
-      
-      // Animate hamburger
-      const spans = navbarToggle.querySelectorAll('span');
-      if (navbarNav.classList.contains('active')) {
-        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-        spans[1].style.opacity = '0';
-        spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
-      } else {
-        spans[0].style.transform = 'none';
-        spans[1].style.opacity = '1';
-        spans[2].style.transform = 'none';
-      }
+      const isActive = navbarNav.classList.toggle('active');
+      navbarToggle.classList.toggle('active', isActive);
+      if (navbarBackdrop) navbarBackdrop.classList.toggle('active', isActive);
+      document.body.style.overflow = isActive ? 'hidden' : '';
     });
-    
+
+    // Close menu when clicking backdrop
+    if (navbarBackdrop) {
+      navbarBackdrop.addEventListener('click', function() {
+        navbarNav.classList.remove('active');
+        navbarToggle.classList.remove('active');
+        navbarBackdrop.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    }
+
     // Close menu when clicking a link
     const navLinks = navbarNav.querySelectorAll('.navbar__link');
     navLinks.forEach(link => {
       link.addEventListener('click', function() {
         if (window.innerWidth <= 992) {
           navbarNav.classList.remove('active');
-          const spans = navbarToggle.querySelectorAll('span');
-          spans[0].style.transform = 'none';
-          spans[1].style.opacity = '1';
-          spans[2].style.transform = 'none';
+          navbarToggle.classList.remove('active');
+          if (navbarBackdrop) navbarBackdrop.classList.remove('active');
+          document.body.style.overflow = '';
         }
       });
     });
   }
-  
+
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -53,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-  
+
   // Add active class to current nav link
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.navbar__link').forEach(link => {
@@ -62,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
       link.classList.add('active');
     }
   });
-  
+
   // Navbar background on scroll
   const navbar = document.querySelector('.navbar');
   if (navbar) {
@@ -74,13 +75,13 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
-  
+
   // Animate elements on scroll (Intersection Observer)
   const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
   };
-  
+
   const observer = new IntersectionObserver(function(entries) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -89,18 +90,18 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }, observerOptions);
-  
+
   document.querySelectorAll('.card, .news-card, .board-card, .product-card, .quick-link').forEach(el => {
     el.style.opacity = '0';
     observer.observe(el);
   });
-  
+
   // Year auto-update for footer
   const yearElement = document.querySelector('.footer__year');
   if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
   }
-  
+
   // Mobile menu dropdown for nested navigation
   const dropdownToggles = document.querySelectorAll('.navbar__link--dropdown');
   dropdownToggles.forEach(function(toggle) {
@@ -121,14 +122,14 @@ document.addEventListener('DOMContentLoaded', function() {
     toggle.setAttribute('aria-expanded', 'false');
     toggle.setAttribute('aria-haspopup', 'true');
   });
-  
+
   // Form validation (for any future forms)
   const forms = document.querySelectorAll('form');
   forms.forEach(form => {
     form.addEventListener('submit', function(e) {
       let isValid = true;
       const required = form.querySelectorAll('[required]');
-      
+
       required.forEach(field => {
         if (!field.value.trim()) {
           isValid = false;
@@ -137,14 +138,14 @@ document.addEventListener('DOMContentLoaded', function() {
           field.style.borderColor = '';
         }
       });
-      
+
       if (!isValid) {
         e.preventDefault();
         alert('Please fill in all required fields.');
       }
     });
   });
-  
+
   // Add hover effect to cards
   const cards = document.querySelectorAll('.card, .news-card, .board-card, .product-card');
   cards.forEach(card => {
@@ -152,4 +153,6 @@ document.addEventListener('DOMContentLoaded', function() {
       this.style.transition = 'all 0.3s ease';
     });
   });
+
+  console.log('JCFOP4 Website Loaded Successfully');
 });
