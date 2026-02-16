@@ -14,19 +14,19 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
   <!-- Navigation -->
   <nav class="navbar">
     <div class="container">
       <a href="index.html" class="navbar__logo">
-        <img src="images/fop-logo.jpg" alt="Jersey City FOP" style="max-width: 45px; height: auto; border-radius: 4px;">
+        <img src="images/fop-logo.jpg" alt="Jersey City FOP" class="navbar__logo-img">
         <div class="navbar__title">
           Jersey City FOP
           <span>Lodge #4</span>
         </div>
       </a>
       
-      <div class="navbar__backdrop"></div>
       <button class="navbar__toggle" aria-label="Toggle navigation">
         <span></span>
         <span></span>
@@ -36,7 +36,7 @@
       <div class="navbar__nav">
         <a href="index.html" class="navbar__link">Home</a>
         <div class="navbar__dropdown">
-          <a href="#" class="navbar__link navbar__link--dropdown">About </a>
+          <a href="#" class="navbar__link navbar__link--dropdown">About ▾</a>
           <div class="navbar__dropdown-menu">
             <a href="presidents-message.html" class="navbar__link">President's Message</a>
             <a href="executive-board.html" class="navbar__link">Executive Board</a>
@@ -57,7 +57,7 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="page-header">
+  <header class="page-header" id="main-content">
     <div class="container">
       <h1>President's Message</h1>
       <p>Words from our Lodge President</p>
@@ -68,19 +68,19 @@
   <section class="section">
     <div class="container">
       <div class="card">
-        <h2 style="margin-bottom: 30px;">Message from President Dave Persad</h2>
+        <h2 class="mb-30">Message from President Dave Persad</h2>
         
-        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px;">
+        <p class="text-lg mb-20">
           A message from President Dave Persad will be posted here.
         </p>
         
-        <p style="font-size: 1.1rem; font-weight: 600; margin-top: 30px;">
+        <p class="text-lg mt-30" style="font-weight: 600;">
           In Brotherhood,
         </p>
         
-        <p style="font-size: 1.2rem; font-family: var(--font-heading); color: var(--navy); margin-top: 10px;">
+        <p class="president-name">
           Dave Persad<br>
-          <span style="font-size: 0.9rem; font-weight: 400; color: var(--gray-dark);">President, Jersey City FOP Lodge #4</span>
+          <span class="president-role">President, Jersey City FOP Lodge #4</span>
         </p>
       </div>
     </div>
@@ -109,7 +109,8 @@
         <div>
           <div class="footer__title">Contact Us</div>
           <p class="footer__text">
-            Contact the Lodge via mail at PO Box 3872, Jersey City, NJ 07303.
+            Email: <a href="mailto:jcfop4@gmail.com" class="footer__link">jcfop4@gmail.com</a><br>
+            Mail: PO Box 3872, Jersey City, NJ 07303
           </p>
         </div>
       </div>

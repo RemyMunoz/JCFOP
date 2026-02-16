@@ -13,18 +13,18 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
   <nav class="navbar">
     <div class="container">
       <a href="index.html" class="navbar__logo">
-        <img src="images/fop-logo.jpg" alt="Jersey City FOP" style="max-width: 45px; height: auto; border-radius: 4px;">
+        <img src="images/fop-logo.jpg" alt="Jersey City FOP" class="navbar__logo-img">
         <div class="navbar__title">
           Jersey City FOP
           <span>Lodge #4</span>
         </div>
       </a>
       
-      <div class="navbar__backdrop"></div>
       <button class="navbar__toggle" aria-label="Toggle navigation">
         <span></span>
         <span></span>
@@ -34,7 +34,7 @@
       <div class="navbar__nav">
         <a href="index.html" class="navbar__link">Home</a>
         <div class="navbar__dropdown">
-          <a href="#" class="navbar__link navbar__link--dropdown">About </a>
+          <a href="#" class="navbar__link navbar__link--dropdown">About ▾</a>
           <div class="navbar__dropdown-menu">
             <a href="presidents-message.html" class="navbar__link">President's Message</a>
             <a href="executive-board.html" class="navbar__link">Executive Board</a>
@@ -54,7 +54,7 @@
     </div>
   </nav>
 
-  <header class="page-header">
+  <header class="page-header" id="main-content">
     <div class="container">
       <h1>Lodge By-Laws</h1>
       <p>Official governing documents</p>
@@ -64,34 +64,34 @@
   <section class="section">
     <div class="container">
       <div class="card">
-        <p style="font-size: 1.1rem; margin-bottom: 30px;"><em>Full bylaws content to be migrated from existing documents. Below is a placeholder outline of the document structure.</em></p>
+        <p class="text-lg mb-30"><em>Full bylaws content to be migrated from existing documents. Below is a placeholder outline of the document structure.</em></p>
         
-        <h2 style="margin-bottom: 20px; margin-top: 30px;">Article I: Name and Object</h2>
+        <h2 class="bylaws-article">Article I: Name and Object</h2>
         <p>This Lodge shall be known as Jersey City Fraternal Order of Police, Lodge #4. The object shall be to foster the spirit of Brotherhood, to elevate the standards and efficiency of law enforcement, and to protect the mutual welfare of its members.</p>
         
-        <h2 style="margin-bottom: 20px; margin-top: 30px;">Article II: Membership</h2>
+        <h2 class="bylaws-article">Article II: Membership</h2>
         <p>Section 1 - Active Members: All active law enforcement officers employed by the Jersey City Police Department who are in good standing are eligible for membership.</p>
-        <p style="margin-top: 10px;">Section 2 - Associate Members: As outlined on the Associate Members page.</p>
-        <p style="margin-top: 10px;">Section 3 - Honorary Members: Persons who have rendered distinguished service to law enforcement may be elected honorary members.</p>
+        <p class="mt-10">Section 2 - Associate Members: As outlined on the Associate Members page.</p>
+        <p class="mt-10">Section 3 - Honorary Members: Persons who have rendered distinguished service to law enforcement may be elected honorary members.</p>
         
-        <h2 style="margin-bottom: 20px; margin-top: 30px;">Article III: Officers</h2>
+        <h2 class="bylaws-article">Article III: Officers</h2>
         <p>The officers of this Lodge shall consist of President, Vice President, Secretary, Treasurer, Sergeant-at-Arms, and such other officers as may be deemed necessary.</p>
         
-        <h2 style="margin-bottom: 20px; margin-top: 30px;">Article IV: Dues and Assessments</h2>
+        <h2 class="bylaws-article">Article IV: Dues and Assessments</h2>
         <p>Section 1 - Initiation Fee: Each applicant for membership shall pay such initiation fee as may be determined by the Lodge.</p>
-        <p style="margin-top: 10px;">Section 2 - Monthly Dues: Regular monthly dues shall be determined at the annual meeting.</p>
+        <p class="mt-10">Section 2 - Monthly Dues: Regular monthly dues shall be determined at the annual meeting.</p>
         
-        <h2 style="margin-bottom: 20px; margin-top: 30px;">Article V: Meetings</h2>
+        <h2 class="bylaws-article">Article V: Meetings</h2>
         <p>Regular meetings shall be held on the first Tuesday of each month. Special meetings may be called by the President or upon petition of ten percent of the membership.</p>
         
-        <h2 style="margin-bottom: 20px; margin-top: 30px;">Article VI: Discipline</h2>
+        <h2 class="bylaws-article">Article VI: Discipline</h2>
         <p>Any member may be suspended or expelled for cause in accordance with the procedures outlined in the National FOP Constitution.</p>
         
-        <h2 style="margin-bottom: 20px; margin-top: 30px;">Article VII: Amendments</h2>
+        <h2 class="bylaws-article">Article VII: Amendments</h2>
         <p>These By-Laws may be amended at any regular meeting by a two-thirds vote of the members present, provided the proposed amendment has been submitted in writing at the previous meeting.</p>
         
-        <div class="callout" style="margin-top: 40px;">
-          <div class="callout__title"> Request Full By-Laws</div>
+        <div class="callout mt-40">
+          <div class="callout__title">📄 Request Full By-Laws</div>
           <p class="callout__text">Members may request a complete copy of the Lodge By-Laws by contacting the Secretary or attending a monthly meeting.</p>
         </div>
       </div>
@@ -120,7 +120,8 @@
         <div>
           <div class="footer__title">Contact Us</div>
           <p class="footer__text">
-            Contact the Lodge via mail at PO Box 3872, Jersey City, NJ 07303.
+            Email: <a href="mailto:jcfop4@gmail.com" class="footer__link">jcfop4@gmail.com</a><br>
+            Mail: PO Box 3872, Jersey City, NJ 07303
           </p>
         </div>
       </div>

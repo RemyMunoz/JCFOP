@@ -12,18 +12,18 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
   <nav class="navbar">
     <div class="container">
       <a href="index.html" class="navbar__logo">
-        <img src="images/fop-logo.jpg" alt="Jersey City FOP" style="max-width: 45px; height: auto; border-radius: 4px;">
+        <img src="images/fop-logo.jpg" alt="Jersey City FOP" class="navbar__logo-img">
         <div class="navbar__title">
           Jersey City FOP
           <span>Lodge #4</span>
         </div>
       </a>
       
-      <div class="navbar__backdrop"></div>
       <button class="navbar__toggle" aria-label="Toggle navigation">
         <span></span>
         <span></span>
@@ -33,7 +33,7 @@
       <div class="navbar__nav">
         <a href="index.html" class="navbar__link">Home</a>
         <div class="navbar__dropdown">
-          <a href="#" class="navbar__link navbar__link--dropdown">About </a>
+          <a href="#" class="navbar__link navbar__link--dropdown">About ▾</a>
           <div class="navbar__dropdown-menu">
             <a href="presidents-message.html" class="navbar__link">President's Message</a>
             <a href="executive-board.html" class="navbar__link">Executive Board</a>
@@ -53,7 +53,7 @@
     </div>
   </nav>
 
-  <header class="page-header">
+  <header class="page-header" id="main-content">
     <div class="container">
       <h1>Executive Board</h1>
       <p>Meet the leadership of Lodge #4</p>
@@ -62,53 +62,53 @@
 
   <section class="section">
     <div class="container">
-      <h2 class="text-center" style="margin-bottom: 40px;">Officers</h2>
+      <h2 class="text-center mb-40">Officers</h2>
       <div class="grid grid--3">
         
         <div class="board-card">
-          <div class="board-card__photo"></div>
+          <div class="board-card__photo">👤</div>
           <h3 class="board-card__name">Dave Persad</h3>
           <p class="board-card__title">President</p>
         </div>
         
         <div class="board-card">
-          <div class="board-card__photo"></div>
+          <div class="board-card__photo">👤</div>
           <h3 class="board-card__name">Osama Badawi</h3>
           <p class="board-card__title">1st Vice President</p>
         </div>
         
         <div class="board-card">
-          <div class="board-card__photo"></div>
+          <div class="board-card__photo">👤</div>
           <h3 class="board-card__name">Michael Hulings</h3>
           <p class="board-card__title">2nd Vice President</p>
         </div>
         
         <div class="board-card">
-          <div class="board-card__photo"></div>
+          <div class="board-card__photo">👤</div>
           <h3 class="board-card__name">Michael Galano</h3>
           <p class="board-card__title">Secretary</p>
         </div>
         
         <div class="board-card">
-          <div class="board-card__photo"></div>
+          <div class="board-card__photo">👤</div>
           <h3 class="board-card__name">Joseph Anzivino</h3>
           <p class="board-card__title">Treasurer</p>
         </div>
         
         <div class="board-card">
-          <div class="board-card__photo"></div>
+          <div class="board-card__photo">👤</div>
           <h3 class="board-card__name">Francis Mario III</h3>
           <p class="board-card__title">Chaplain</p>
         </div>
         
         <div class="board-card">
-          <div class="board-card__photo"></div>
+          <div class="board-card__photo">👤</div>
           <h3 class="board-card__name">Cynthia Miller</h3>
           <p class="board-card__title">Conductor</p>
         </div>
         
         <div class="board-card">
-          <div class="board-card__photo"></div>
+          <div class="board-card__photo">👤</div>
           <h3 class="board-card__name">Melissa Sarmiento</h3>
           <p class="board-card__title">Guard</p>
         </div>
@@ -119,23 +119,23 @@
 
   <section class="section section--gray">
     <div class="container">
-      <h2 class="text-center" style="margin-bottom: 40px;">Trustees</h2>
+      <h2 class="text-center mb-40">Trustees</h2>
       <div class="grid grid--3">
         
         <div class="board-card">
-          <div class="board-card__photo"></div>
+          <div class="board-card__photo">👤</div>
           <h3 class="board-card__name">Roxanne Rodriguez</h3>
           <p class="board-card__title">Trustee</p>
         </div>
         
         <div class="board-card">
-          <div class="board-card__photo"></div>
+          <div class="board-card__photo">👤</div>
           <h3 class="board-card__name">Krystal Rodriguez</h3>
           <p class="board-card__title">Trustee</p>
         </div>
         
         <div class="board-card">
-          <div class="board-card__photo"></div>
+          <div class="board-card__photo">👤</div>
           <h3 class="board-card__name">Matthew Ramos</h3>
           <p class="board-card__title">Trustee</p>
         </div>
@@ -166,7 +166,8 @@
         <div>
           <div class="footer__title">Contact Us</div>
           <p class="footer__text">
-            Contact the Lodge via mail at PO Box 3872, Jersey City, NJ 07303.
+            Email: <a href="mailto:jcfop4@gmail.com" class="footer__link">jcfop4@gmail.com</a><br>
+            Mail: PO Box 3872, Jersey City, NJ 07303
           </p>
         </div>
       </div>

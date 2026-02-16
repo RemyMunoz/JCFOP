@@ -13,18 +13,18 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
   <nav class="navbar">
     <div class="container">
       <a href="index.html" class="navbar__logo">
-        <img src="images/fop-logo.jpg" alt="Jersey City FOP" style="max-width: 45px; height: auto; border-radius: 4px;">
+        <img src="images/fop-logo.jpg" alt="Jersey City FOP" class="navbar__logo-img">
         <div class="navbar__title">
           Jersey City FOP
           <span>Lodge #4</span>
         </div>
       </a>
       
-      <div class="navbar__backdrop"></div>
       <button class="navbar__toggle" aria-label="Toggle navigation">
         <span></span>
         <span></span>
@@ -34,7 +34,7 @@
       <div class="navbar__nav">
         <a href="index.html" class="navbar__link">Home</a>
         <div class="navbar__dropdown">
-          <a href="#" class="navbar__link navbar__link--dropdown">About </a>
+          <a href="#" class="navbar__link navbar__link--dropdown">About ▾</a>
           <div class="navbar__dropdown-menu">
             <a href="presidents-message.html" class="navbar__link">President's Message</a>
             <a href="executive-board.html" class="navbar__link">Executive Board</a>
@@ -54,7 +54,7 @@
     </div>
   </nav>
 
-  <header class="page-header">
+  <header class="page-header" id="main-content">
     <div class="container">
       <h1>Important Information</h1>
       <p>Resources for members and families</p>
@@ -65,84 +65,45 @@
     <div class="container">
       
       <!-- Emergency Helpline - Cop to Cop -->
-      <div class="callout callout--cop" style="margin-bottom: 40px;">
-        <div class="callout__title"> Cop-to-Cop Helpline — Available 24/7</div>
+      <div class="callout callout--cop mb-40">
+        <div class="callout__title">🚨 Cop-to-Cop Helpline — Available 24/7</div>
         <p class="callout__text">You are not alone. Help is available 24/7.</p>
-        <p class="callout__text" style="margin-top: 10px;">The Cop-to-Cop Helpline provides confidential support for officers and their families. Call anytime you need assistance.</p>
+        <p class="callout__text mt-10">The Cop-to-Cop Helpline provides confidential support for officers and their families. Call anytime you need assistance.</p>
       </div>
       
       <!-- JCPD Anonymous Tips -->
-      <div class="callout" style="margin-bottom: 40px;">
-        <div class="callout__title"> JCPD Anonymous Tips Line</div>
+      <div class="callout mb-40">
+        <div class="callout__title">🔍 JCPD Anonymous Tips Line</div>
         <p class="callout__text">Report crime anonymously. Help keep Jersey City safe.</p>
-        <p class="callout__text" style="margin-top: 10px;">
-          <strong>Phone:</strong> <a href="tel:8555278477" style="color: var(--gold);">855-JCP-TIPS (855-527-8477)</a><br>
-          <strong>Email:</strong> <a href="mailto:jctips@jcnj.org" style="color: var(--gold);">jctips@jcnj.org</a>
+        <p class="callout__text mt-10">
+          <strong>Phone:</strong> <a href="tel:8555278477" class="text-gold">855-JCP-TIPS (855-527-8477)</a><br>
+          <strong>Email:</strong> <a href="mailto:jctips@jcnj.org" class="text-gold">jctips@jcnj.org</a>
         </p>
       </div>
-      
-      <!-- JCPD Quick Reference -->
-      <div class="callout" style="margin-bottom: 40px;">
-        <div class="callout__title"> JCPD Quick Reference</div>
-        <p class="callout__text" style="margin-top: 10px;">
-          <strong>Emergency:</strong> 911<br>
-          <strong>Non-Emergency:</strong> <a href="tel:2015475477" style="color: var(--gold);">(201) 547-5477</a><br>
-          <strong>Anonymous Tips:</strong> <a href="tel:8555278477" style="color: var(--gold);">855-JCP-TIPS</a> or <a href="mailto:jctips@jcnj.org" style="color: var(--gold);">jctips@jcnj.org</a><br>
-          <strong>JCPD Headquarters:</strong> Two Jackson Sq. (356 MLK Drive), Jersey City, NJ 07305
-        </p>
-      </div>
-      
-      <!-- Prescription Drug Drop Boxes -->
-      <section class="section" style="background: linear-gradient(135deg, #0A1628 0%, #1E3A5F 100%); padding: 60px 0; margin: 40px 0;">
-        <div class="container">
-          <h2 class="text-center" style="color: #C9A84C; margin-bottom: 40px;">Prescription Drug Drop Boxes</h2>
-          
-          <p class="text-center" style="color: #FFFFFF; font-size: 1.1rem; margin-bottom: 30px;">Safely dispose of unwanted prescriptions at any JCPD precinct drop box:</p>
-          
-          <div class="grid grid--4">
-            <div class="card" style="text-align: center;">
-              <h3 style="color: #C9A84C; font-size: 1rem; margin-bottom: 10px;">North District</h3>
-              <p style="color: #0A1628; font-size: 0.9rem;">282 Central Avenue<br>Jersey City NJ 07307</p>
-            </div>
-            <div class="card" style="text-align: center;">
-              <h3 style="color: #C9A84C; font-size: 1rem; margin-bottom: 10px;">South District</h3>
-              <p style="color: #0A1628; font-size: 0.9rem;">191 Bergen Avenue<br>Jersey City NJ 07305</p>
-            </div>
-            <div class="card" style="text-align: center;">
-              <h3 style="color: #C9A84C; font-size: 1rem; margin-bottom: 10px;">East District</h3>
-              <p style="color: #0A1628; font-size: 0.9rem;">207 7th Street<br>Jersey City NJ 07302</p>
-            </div>
-            <div class="card" style="text-align: center;">
-              <h3 style="color: #C9A84C; font-size: 1rem; margin-bottom: 10px;">West District</h3>
-              <p style="color: #0A1628; font-size: 0.9rem;">1 Jackson Street<br>Jersey City NJ 07304</p>
-            </div>
-          </div>
-        </div>
-      </section>
       
       <!-- Officer Wellness Section -->
-      <section class="section" style="background: linear-gradient(135deg, #0A1628 0%, #1E3A5F 100%); padding: 60px 0; margin: 40px 0;">
+      <section class="section wellness-section">
         <div class="container">
-          <h2 class="text-center" style="color: #C9A84C; margin-bottom: 40px;">Officer Wellness</h2>
+          <h2 class="text-center mb-40">Officer Wellness</h2>
           
           <div class="grid grid--3">
             
-            <div class="card" style="text-align: center;">
-              <h3 style="color: #C9A84C; font-size: 1.3rem; margin-bottom: 15px;">Cop-to-Cop</h3>
-              <p style="color: #0A1628; margin-bottom: 15px;">Confidential peer support for law enforcement officers and families.</p>
-              <a href="tel:18662672267" style="font-size: 1.5rem; font-weight: bold; color: #C9A84C;">1-866-267-2267</a>
+            <div class="card wellness-card card--centered">
+              <h3>Cop-to-Cop</h3>
+              <p>Confidential peer support for law enforcement officers and families.</p>
+              <a href="tel:18662672267">1-866-267-2267</a>
             </div>
             
-            <div class="card" style="text-align: center;">
-              <h3 style="color: #C9A84C; font-size: 1.3rem; margin-bottom: 15px;">COPLINE</h3>
-              <p style="color: #0A1628; margin-bottom: 15px;">Confidential mental health support for law enforcement.</p>
-              <a href="tel:18002675463" style="font-size: 1.5rem; font-weight: bold; color: #C9A84C;">1-800-267-5463</a>
+            <div class="card wellness-card card--centered">
+              <h3>COPLINE</h3>
+              <p>Confidential mental health support for law enforcement.</p>
+              <a href="tel:18002675463">1-800-267-5463</a>
             </div>
             
-            <div class="card" style="text-align: center;">
-              <h3 style="color: #C9A84C; font-size: 1.3rem; margin-bottom: 15px;">Veterans Crisis Line</h3>
-              <p style="color: #0A1628; margin-bottom: 15px;">Support for veteran officers in crisis.</p>
-              <a href="tel:988" style="font-size: 1.5rem; font-weight: bold; color: #C9A84C;">988 (then press 1)</a>
+            <div class="card wellness-card card--centered">
+              <h3>Veterans Crisis Line</h3>
+              <p>Support for veteran officers in crisis.</p>
+              <a href="tel:988">988 (then press 1)</a>
             </div>
             
           </div>
@@ -150,43 +111,24 @@
       </section>
       
       <!-- Scholarship Section -->
-      <section class="section" style="background: linear-gradient(135deg, #0A1628 0%, #1E3A5F 100%); padding: 60px 0; margin: 40px 0;">
+      <section class="section scholarship-section">
         <div class="container">
-          <h2 class="text-center" style="color: #C9A84C; margin-bottom: 40px;">Scholarship Assistance Program</h2>
+          <h2 class="text-center mb-40">Scholarship Assistance Program</h2>
           
-          <div class="card" style="max-width: 800px; margin: 0 auto; text-align: center; background: transparent;">
-            <p class="card__text" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px; color: #FFFFFF;">
+          <div class="card scholarship-detail">
+            <p class="card__text text-lg mb-20">
               Lodge #4 is proud to offer its annual Scholarship Assistance Program. A one-time scholarship of $1,000 will be awarded to graduating high school seniors whose parent or legal guardian is a member in good standing of Lodge #4.
             </p>
-            <p class="card__text" style="font-size: 1rem; line-height: 1.8; margin-bottom: 20px; color: #FFFFFF;">
+            <p class="card__text text-md mb-20">
               Scholarships are awarded based on scholastic merit, economic need, and life goals. Applicants must submit transcripts (freshman year through first semester of senior year) and SAT or comparable scores.
             </p>
-            <p class="card__text" style="font-size: 1.1rem; font-weight: bold; color: #C9A84C;">
+            <p class="card__text text-gold-bold">
               Applications must be received or postmarked by April 3rd, 2026
             </p>
-            <p class="card__text" style="font-size: 1rem; margin-top: 20px; color: #FFFFFF;">
+            <p class="card__text text-md mt-20">
               The selection committee will meet by April 10th, 2026. Contact the Lodge for the official application form.
             </p>
-            <a href="documents/2026_JCFOP_Scholarship_Assistance_Program.pdf" target="_blank" class="btn btn--gold" style="margin-top: 25px;">Download 2026 Scholarship Application (PDF)</a>
-          </div>
-        </div>
-      </section>
-      
-      <!-- Disaster Relief Section -->
-      <section class="section" style="background: linear-gradient(135deg, #0A1628 0%, #1E3A5F 100%); padding: 60px 0; margin: 40px 0;">
-        <div class="container">
-          <h2 class="text-center" style="color: #C9A84C; margin-bottom: 40px;">Disaster Relief</h2>
-          
-          <div class="card" style="max-width: 800px; margin: 0 auto; text-align: center; background: transparent;">
-            <p class="card__text" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px; color: #FFFFFF;">
-              NJ FOP members experiencing financial hardship due to a disaster can apply for assistance.
-            </p>
-            <p class="card__text" style="font-size: 1rem; line-height: 1.8; margin-bottom: 20px; color: #FFFFFF;">
-              <strong>Contact:</strong><br>
-              NJFOP Disaster Relief<br>
-              108 W State St., Trenton NJ 08608
-            </p>
-            <p style="font-size: 1rem; line-height: 1.8; margin-bottom: 20px; color: #FFFFFF;">Contact NJFOP for the disaster relief application.</p>
+            <a href="documents/2026_JCFOP_Scholarship_Assistance_Program.pdf" target="_blank" class="btn btn--gold mt-25">Download 2026 Scholarship Application (PDF)</a>
           </div>
         </div>
       </section>
@@ -195,10 +137,10 @@
         
         <!-- FOP DMV Plates -->
         <div class="card">
-          <h3 class="card__title"> FOP DMV Plates</h3>
+          <h3 class="card__title">🚗 FOP DMV Plates</h3>
           <p class="card__text">New Jersey FOP license plates are available to all active and retired law enforcement officers. Show your pride with an official FOP plate on your vehicle.</p>
-          <p class="card__text" style="margin-top: 15px;"><strong>How to Apply:</strong></p>
-          <ul style="margin-left: 20px; margin-top: 10px;">
+          <p class="card__text mt-15"><strong>How to Apply:</strong></p>
+          <ul class="unordered-list">
             <li>Visit your local MVC office</li>
             <li>Request FOP license plates</li>
             <li>Present your FOP membership card</li>
@@ -207,35 +149,35 @@
         
         <!-- FOP Insurance -->
         <div class="card">
-          <h3 class="card__title"> FOP Insurance</h3>
+          <h3 class="card__title">🏥 FOP Insurance</h3>
           <p class="card__text">The National FOP offers exclusive insurance programs for members, including life insurance, disability coverage, and more.</p>
-          <p class="card__text" style="margin-top: 15px;"><strong>Enrollment Information:</strong></p>
-          <ul style="margin-left: 20px; margin-top: 10px;">
+          <p class="card__text mt-15"><strong>Enrollment Information:</strong></p>
+          <ul class="unordered-list">
             <li>Group rates available</li>
             <li>Family coverage options</li>
             <li>Retiree plans</li>
           </ul>
-          <p class="card__text" style="margin-top: 15px;">Contact the Lodge for insurance enrollment information.</p>
+          <a href="#" class="btn btn--primary mt-20">Download Insurance Form (PDF)</a>
         </div>
         
         <!-- Retiree Info -->
         <div class="card">
-          <h3 class="card__title"> Retiree Information</h3>
+          <h3 class="card__title">👴 Retiree Information</h3>
           <p class="card__text">Information for our retired members continues to be a priority. Retirees maintain all membership benefits including:</p>
-          <ul style="margin-left: 20px; margin-top: 10px;">
+          <ul class="unordered-list">
             <li>Access to member resources</li>
             <li>Discount programs</li>
             <li>Cop-to-Cop helpline access</li>
             <li>Lodge meeting attendance</li>
           </ul>
-          <p class="card__text" style="margin-top: 15px;">For questions about retiree benefits, contact the Lodge.</p>
+          <p class="card__text mt-15">For questions about retiree benefits, contact the Lodge.</p>
         </div>
         
         <!-- Member Benefits -->
         <div class="card">
-          <h3 class="card__title"> Member Benefits</h3>
+          <h3 class="card__title">⭐ Member Benefits</h3>
           <p class="card__text">As a member of Jersey City FOP Lodge #4, you have access to:</p>
-          <ul style="margin-left: 20px; margin-top: 10px;">
+          <ul class="unordered-list">
             <li>Legal assistance program</li>
             <li>Death benefit fund</li>
             <li>Scholarship program</li>
@@ -251,7 +193,7 @@
 
   <section class="section section--gray">
     <div class="container">
-      <h2 class="text-center" style="margin-bottom: 30px;">Contact Resources</h2>
+      <h2 class="text-center mb-30">Contact Resources</h2>
       <div class="grid grid--3">
         <div class="card text-center">
           <h3>Main Office</h3>
@@ -263,7 +205,7 @@
         </div>
         <div class="card text-center">
           <h3>Email</h3>
-          <p>Contact the Lodge via mail at PO Box 3872, Jersey City, NJ 07303.</p>
+          <p><a href="mailto:Contact the Lodge via mail: PO Box 3872, Jersey City, NJ 07303">Contact the Lodge via mail: PO Box 3872, Jersey City, NJ 07303</a></p>
         </div>
       </div>
     </div>
@@ -291,7 +233,8 @@
         <div>
           <div class="footer__title">Contact Us</div>
           <p class="footer__text">
-            Contact the Lodge via mail at PO Box 3872, Jersey City, NJ 07303.
+            Email: <a href="mailto:jcfop4@gmail.com" class="footer__link">jcfop4@gmail.com</a><br>
+            Mail: PO Box 3872, Jersey City, NJ 07303
           </p>
         </div>
       </div>

@@ -12,18 +12,18 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
   <nav class="navbar">
     <div class="container">
       <a href="index.html" class="navbar__logo">
-        <img src="images/fop-logo.jpg" alt="Jersey City FOP" style="max-width: 45px; height: auto; border-radius: 4px;">
+        <img src="images/fop-logo.jpg" alt="Jersey City FOP" class="navbar__logo-img">
         <div class="navbar__title">
           Jersey City FOP
           <span>Lodge #4</span>
         </div>
       </a>
       
-      <div class="navbar__backdrop"></div>
       <button class="navbar__toggle" aria-label="Toggle navigation">
         <span></span>
         <span></span>
@@ -33,7 +33,7 @@
       <div class="navbar__nav">
         <a href="index.html" class="navbar__link">Home</a>
         <div class="navbar__dropdown">
-          <a href="#" class="navbar__link navbar__link--dropdown">About </a>
+          <a href="#" class="navbar__link navbar__link--dropdown">About ▾</a>
           <div class="navbar__dropdown-menu">
             <a href="presidents-message.html" class="navbar__link">President's Message</a>
             <a href="executive-board.html" class="navbar__link">Executive Board</a>
@@ -53,7 +53,7 @@
     </div>
   </nav>
 
-  <header class="page-header">
+  <header class="page-header" id="main-content">
     <div class="container">
       <h1>Member Benefits</h1>
       <p>Exclusive benefits for FOP members</p>
@@ -62,52 +62,44 @@
 
   <section class="section">
     <div class="container">
-      <p class="text-center" style="font-size: 1.2rem; margin-bottom: 40px;">As a member of Jersey City FOP Lodge #4, you have access to these exclusive benefits through the National FOP.</p>
+      <p class="text-center text-lg mb-40">As a member of Jersey City FOP Lodge #4, you have access to these exclusive benefits through the National FOP.</p>
       
       <div class="grid grid--3">
         
         <div class="card">
-          <h3 class="card__title" style="color: var(--badge-gold);">NJ FOP Legal Defense Plan</h3>
-          <p class="card__text">The NJ FOP Legal Defense Plan has been the premier plan for New Jersey law enforcement officers since 1989. It covers all criminal, civil, and administrative proceedings arising from law enforcement activities, with unlimited legal fees, court costs, and transcript fees.</p>
-          <p class="card__text" style="margin-top: 10px; font-size: 0.95rem;">Contact the Lodge for enrollment details.</p>
-          <a href="https://njfop.org/2021/06/nj-fop-legal-defense-plan/" target="_blank" class="btn btn--outline" style="margin-top: 15px; border-color: var(--badge-gold); color: var(--badge-gold);">Learn More</a>
+          <h3 class="card__title benefit-title">FOP Legal Defense Plan</h3>
+          <p class="card__text">Comprehensive legal representation for officers facing workplace disputes and civil litigation.</p>
+          <a href="https://www.fop.net/legal-defense-plan" target="_blank" class="btn btn--outline btn--benefit">Learn More</a>
         </div>
         
         <div class="card">
-          <h3 class="card__title" style="color: var(--badge-gold);">FOP University</h3>
+          <h3 class="card__title benefit-title">FOP University</h3>
           <p class="card__text">Education discounts and tuition assistance for members and their families.</p>
-          <a href="https://www.fop.net/fop-university" target="_blank" class="btn btn--outline" style="margin-top: 15px; border-color: var(--badge-gold); color: var(--badge-gold);">Learn More</a>
+          <a href="https://www.fop.net/fop-university" target="_blank" class="btn btn--outline btn--benefit">Learn More</a>
         </div>
         
         <div class="card">
-          <h3 class="card__title" style="color: var(--badge-gold);">FOP Visa Rewards Credit Card</h3>
+          <h3 class="card__title benefit-title">FOP Visa Rewards Credit Card</h3>
           <p class="card__text">Earn rewards on every purchase while supporting law enforcement.</p>
-          <a href="https://fop.net/benefit/fop-visa-rewards-credit-card/" target="_blank" class="btn btn--outline" style="margin-top: 15px; border-color: var(--badge-gold); color: var(--badge-gold);">Learn More</a>
+          <a href="https://www.fop.net" target="_blank" class="btn btn--outline btn--benefit">Learn More</a>
         </div>
         
         <div class="card">
-          <h3 class="card__title" style="color: var(--badge-gold);">Liberty Mutual Insurance</h3>
+          <h3 class="card__title benefit-title">Liberty Mutual Insurance</h3>
           <p class="card__text">Exclusive group discounts on auto, home, and life insurance for members.</p>
-          <a href="https://fop.net/?s=liberty+mutual" target="_blank" class="btn btn--outline" style="margin-top: 15px; border-color: var(--badge-gold); color: var(--badge-gold);">Learn More</a>
+          <a href="https://www.fop.net" target="_blank" class="btn btn--outline btn--benefit">Learn More</a>
         </div>
         
         <div class="card">
-          <h3 class="card__title" style="color: var(--badge-gold);">National Police Federal Credit Union</h3>
+          <h3 class="card__title benefit-title">National Police Federal Credit Union</h3>
           <p class="card__text">Banking benefits designed specifically for law enforcement professionals.</p>
-          <a href="https://fop.net/benefit/national-police-federal-credit-union/" target="_blank" class="btn btn--outline" style="margin-top: 15px; border-color: var(--badge-gold); color: var(--badge-gold);">Learn More</a>
+          <a href="https://www.fop.net" target="_blank" class="btn btn--outline btn--benefit">Learn More</a>
         </div>
         
         <div class="card">
-          <h3 class="card__title" style="color: var(--badge-gold);">Jersey City Police Federal Credit Union</h3>
-          <p class="card__text">Banking services built exclusively for JCPD officers and their families. Established in 1950, offering savings accounts, checking, auto loans, mortgages, and mobile banking. NCUA insured up to $250,000.</p>
-          <p class="card__text" style="margin-top: 10px;"><strong>Address:</strong> 161 Sterling Avenue, Jersey City, NJ 07305</p>
-          <p class="card__text"><strong>Phone:</strong> (201) 547-5388</p>
-        </div>
-        
-        <div class="card">
-          <h3 class="card__title" style="color: var(--badge-gold);">FOP Foundation Grants</h3>
+          <h3 class="card__title benefit-title">FOP Foundation Grants</h3>
           <p class="card__text">Financial support for lodge programs and member assistance initiatives.</p>
-          <a href="https://www.fop.net/fop-foundation/" target="_blank" class="btn btn--outline" style="margin-top: 15px; border-color: var(--badge-gold); color: var(--badge-gold);">Learn More</a>
+          <a href="https://www.fop.net/fop-foundation/" target="_blank" class="btn btn--outline btn--benefit">Learn More</a>
         </div>
         
       </div>
@@ -116,7 +108,7 @@
 
   <section class="section section--gray">
     <div class="container">
-      <h2 class="text-center" style="margin-bottom: 30px;">Questions?</h2>
+      <h2 class="text-center mb-30">Questions?</h2>
       <p class="text-center">Contact Lodge #4 for more information about member benefits.</p>
     </div>
   </section>
@@ -143,7 +135,8 @@
         <div>
           <div class="footer__title">Contact Us</div>
           <p class="footer__text">
-            Contact the Lodge via mail at PO Box 3872, Jersey City, NJ 07303.
+            Email: <a href="mailto:jcfop4@gmail.com" class="footer__link">jcfop4@gmail.com</a><br>
+            Mail: PO Box 3872, Jersey City, NJ 07303
           </p>
         </div>
       </div>

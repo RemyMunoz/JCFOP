@@ -13,18 +13,18 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
   <nav class="navbar">
     <div class="container">
       <a href="index.html" class="navbar__logo">
-        <img src="images/fop-logo.jpg" alt="Jersey City FOP" style="max-width: 45px; height: auto; border-radius: 4px;">
+        <img src="images/fop-logo.jpg" alt="Jersey City FOP" class="navbar__logo-img">
         <div class="navbar__title">
           Jersey City FOP
           <span>Lodge #4</span>
         </div>
       </a>
       
-      <div class="navbar__backdrop"></div>
       <button class="navbar__toggle" aria-label="Toggle navigation">
         <span></span>
         <span></span>
@@ -34,7 +34,7 @@
       <div class="navbar__nav">
         <a href="index.html" class="navbar__link">Home</a>
         <div class="navbar__dropdown">
-          <a href="#" class="navbar__link navbar__link--dropdown">About </a>
+          <a href="#" class="navbar__link navbar__link--dropdown">About ▾</a>
           <div class="navbar__dropdown-menu">
             <a href="presidents-message.html" class="navbar__link">President's Message</a>
             <a href="executive-board.html" class="navbar__link">Executive Board</a>
@@ -55,27 +55,49 @@
   </nav>
 
   <!-- Memorial Hero -->
-  <section class="memorial">
+  <section class="memorial" id="main-content">
     <div class="container">
       <h1 class="memorial__title">Fallen Officers Memorial</h1>
       <p class="memorial__subtitle">In Honor of Our Fallen Brothers and Sisters of the Jersey City Police Department</p>
       <div class="thin-blue-line" style="margin: 30px auto; max-width: 600px;"></div>
       
-      <p class="memorial__tribute" style="max-width: 800px; margin: 40px auto; text-align: center; font-size: 1.2rem; line-height: 1.8;">This page is dedicated to the memory of all Jersey City Police Department officers who made the ultimate sacrifice in the line of duty. Their courage and service will never be forgotten. If you would like to submit a name for inclusion on this memorial, please contact the Lodge.</p>
+      <div class="grid grid--2">
+        
+        <div class="memorial__name">
+          <h3>Officer Name</h3>
+          <p class="memorial__date">End of Watch: January 1, 2000</p>
+        </div>
+        
+        <div class="memorial__name">
+          <h3>Officer Name</h3>
+          <p class="memorial__date">End of Watch: March 15, 1998</p>
+        </div>
+        
+        <div class="memorial__name">
+          <h3>Officer Name</h3>
+          <p class="memorial__date">End of Watch: July 22, 1995</p>
+        </div>
+        
+        <div class="memorial__name">
+          <h3>Officer Name</h3>
+          <p class="memorial__date">End of Watch: November 8, 1992</p>
+        </div>
+        
+      </div>
       
-      <p class="memorial__tribute">"Gone but never forgotten. Your sacrifice lives on in every officer who carries the badge."</p>
+      <p class="memorial__tribute">"Gone but never forgotten. Your sacrifice will never be forgotten."</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
       <div class="card">
-        <h2 style="text-align: center; margin-bottom: 30px;">Honoring Our Fallen</h2>
-        <p style="text-align: center; font-size: 1.1rem; margin-bottom: 20px;">
+        <h2 class="text-center mb-30">Honoring Our Fallen</h2>
+        <p class="text-center text-lg mb-20">
           The Jersey City FOP Lodge #4 honors the memory of all officers who made the ultimate sacrifice in the line of duty. Their courage and dedication will forever be remembered.
         </p>
         
-        <div class="callout callout--gold" style="margin-top: 30px;">
+        <div class="callout callout--gold mt-30">
           <div class="callout__title" style="color: var(--navy);">Add a Name</div>
           <p style="color: var(--navy);">To add a fallen officer to this memorial or to update information, please contact the Lodge.</p>
         </div>
@@ -106,7 +128,8 @@
         <div>
           <div class="footer__title">Contact Us</div>
           <p class="footer__text">
-            Contact the Lodge via mail at PO Box 3872, Jersey City, NJ 07303.
+            Email: <a href="mailto:jcfop4@gmail.com" class="footer__link">jcfop4@gmail.com</a><br>
+            Mail: PO Box 3872, Jersey City, NJ 07303
           </p>
         </div>
       </div>

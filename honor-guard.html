@@ -13,18 +13,18 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
   <nav class="navbar">
     <div class="container">
       <a href="index.html" class="navbar__logo">
-        <img src="images/fop-logo.jpg" alt="Jersey City FOP" style="max-width: 45px; height: auto; border-radius: 4px;">
+        <img src="images/fop-logo.jpg" alt="Jersey City FOP" class="navbar__logo-img">
         <div class="navbar__title">
           Jersey City FOP
           <span>Lodge #4</span>
         </div>
       </a>
       
-      <div class="navbar__backdrop"></div>
       <button class="navbar__toggle" aria-label="Toggle navigation">
         <span></span>
         <span></span>
@@ -34,7 +34,7 @@
       <div class="navbar__nav">
         <a href="index.html" class="navbar__link">Home</a>
         <div class="navbar__dropdown">
-          <a href="#" class="navbar__link navbar__link--dropdown">About </a>
+          <a href="#" class="navbar__link navbar__link--dropdown">About ▾</a>
           <div class="navbar__dropdown-menu">
             <a href="presidents-message.html" class="navbar__link">President's Message</a>
             <a href="executive-board.html" class="navbar__link">Executive Board</a>
@@ -54,7 +54,7 @@
     </div>
   </nav>
 
-  <header class="page-header">
+  <header class="page-header" id="main-content">
     <div class="container">
       <h1>Honor Guard</h1>
       <p>Preserving tradition, honoring sacrifice</p>
@@ -67,21 +67,21 @@
         <div>
           <h2>About Our Honor Guard</h2>
           <p>The Jersey City FOP Lodge #4 Honor Guard is a distinguished unit dedicated to preserving the traditions of law enforcement and honoring those who have made the ultimate sacrifice.</p>
-          <p style="margin-top: 15px;">Our Honor Guard members volunteer their time to provide ceremonial support at:</p>
-          <ul class="list" style="margin-top: 15px;">
-            <li class="list__item"><span class="list__icon"></span><span>Funeral honors for fallen officers</span></li>
-            <li class="list__item"><span class="list__icon"></span><span>Line of duty death ceremonies</span></li>
-            <li class="list__item"><span class="list__icon"></span><span>Public events and parades</span></li>
-            <li class="list__item"><span class="list__icon"></span><span>Badge pinning ceremonies</span></li>
-            <li class="list__item"><span class="list__icon"></span><span>Community commemorations</span></li>
+          <p class="mt-15">Our Honor Guard members volunteer their time to provide ceremonial support at:</p>
+          <ul class="list mt-15">
+            <li class="list__item"><span class="list__icon">★</span><span>Funeral honors for fallen officers</span></li>
+            <li class="list__item"><span class="list__icon">★</span><span>Line of duty death ceremonies</span></li>
+            <li class="list__item"><span class="list__icon">★</span><span>Public events and parades</span></li>
+            <li class="list__item"><span class="list__icon">★</span><span>Badge pinning ceremonies</span></li>
+            <li class="list__item"><span class="list__icon">★</span><span>Community commemorations</span></li>
           </ul>
         </div>
         <div>
           <div class="card">
             <h3 class="card__title">Join the Honor Guard</h3>
             <p class="card__text">Members interested in joining the Honor Guard should attend a monthly meeting or contact any board member.</p>
-            <p class="card__text" style="margin-top: 15px;"><strong>Requirements:</strong></p>
-            <ul style="margin-left: 20px; margin-top: 10px;">
+            <p class="card__text mt-15"><strong>Requirements:</strong></p>
+            <ul class="unordered-list">
               <li>Active or retired member in good standing</li>
               <li>Maintain professional appearance</li>
               <li>Commit to training and events</li>
@@ -95,28 +95,28 @@
 
   <section class="section section--gray">
     <div class="container">
-      <h2 class="text-center" style="margin-bottom: 40px;">Photo Gallery</h2>
+      <h2 class="text-center mb-40">Photo Gallery</h2>
       <div class="grid grid--3">
-        <div style="background: var(--navy); height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--gray-dark);">
+        <div class="photo-placeholder">
           [Photo Placeholder 1]
         </div>
-        <div style="background: var(--navy); height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--gray-dark);">
+        <div class="photo-placeholder">
           [Photo Placeholder 2]
         </div>
-        <div style="background: var(--navy); height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--gray-dark);">
+        <div class="photo-placeholder">
           [Photo Placeholder 3]
         </div>
-        <div style="background: var(--navy); height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--gray-dark);">
+        <div class="photo-placeholder">
           [Photo Placeholder 4]
         </div>
-        <div style="background: var(--navy); height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--gray-dark);">
+        <div class="photo-placeholder">
           [Photo Placeholder 5]
         </div>
-        <div style="background: var(--navy); height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--gray-dark);">
+        <div class="photo-placeholder">
           [Photo Placeholder 6]
         </div>
       </div>
-      <p class="text-center" style="margin-top: 20px; color: var(--gray-dark);"><em>Photos coming soon. Replace images in /images/ folder.</em></p>
+      <p class="text-center mt-20" style="color: var(--gray-dark);"><em>Photos coming soon. Replace images in /images/ folder.</em></p>
     </div>
   </section>
 
@@ -142,7 +142,8 @@
         <div>
           <div class="footer__title">Contact Us</div>
           <p class="footer__text">
-            Contact the Lodge via mail at PO Box 3872, Jersey City, NJ 07303.
+            Email: <a href="mailto:jcfop4@gmail.com" class="footer__link">jcfop4@gmail.com</a><br>
+            Mail: PO Box 3872, Jersey City, NJ 07303
           </p>
         </div>
       </div>
