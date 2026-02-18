@@ -989,6 +989,7 @@ h1, h2, h3, h4, h5, h6 {
 .delay-4 { animation-delay: 0.4s; }
 
 /* ----- Mobile Contrast Fixes ----- */
+/* BEGIN MOBILE CONTRAST FIX – FEB 2026 */
 @media (max-width: 576px) {
   /* Increase contrast for card text on mobile */
   .card__text {
@@ -1027,6 +1028,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #555555;
   }
 }
+/* END MOBILE CONTRAST FIX – FEB 2026 */
 
 /* ----- Print Styles ----- */
 @media print {
