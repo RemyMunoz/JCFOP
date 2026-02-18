@@ -356,7 +356,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card__text {
-  color: var(--gray-dark);
+  color: #444444;
 }
 
 /* ----- Grid Layouts ----- */
@@ -596,7 +596,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .news-card__excerpt {
-  color: var(--gray-dark);
+  color: #444444;
 }
 
 /* ----- Board Member Cards ----- */
@@ -679,7 +679,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-card__desc {
-  color: var(--gray-dark);
+  color: #444444;
   font-size: 0.9rem;
 }
 
@@ -708,6 +708,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .callout__text {
   color: var(--gray-medium);
+}
+
+/* Increase contrast for callout--gold text */
+.callout--gold .callout__text {
+  color: #1a1a1a;
 }
 
 /* ----- Memorial Page ----- */
@@ -982,6 +987,46 @@ h1, h2, h3, h4, h5, h6 {
 .delay-2 { animation-delay: 0.2s; }
 .delay-3 { animation-delay: 0.3s; }
 .delay-4 { animation-delay: 0.4s; }
+
+/* ----- Mobile Contrast Fixes ----- */
+@media (max-width: 576px) {
+  /* Increase contrast for card text on mobile */
+  .card__text {
+    color: #333333;
+  }
+  
+  /* Member Action Needed panel - callout--gold text contrast */
+  .callout--gold .callout__text {
+    color: #1a1a1a;
+  }
+  
+  /* Ensure button text is readable on mobile */
+  .btn--benefit {
+    color: #0A1628;
+    border-color: #0A1628;
+  }
+  
+  /* Light background sections text contrast */
+  .section--gray .card__text,
+  .section--gray .card__title {
+    color: #333333;
+  }
+  
+  /* Product card text */
+  .product-card__desc {
+    color: #444444;
+  }
+  
+  /* News card excerpt */
+  .news-card__excerpt {
+    color: #444444;
+  }
+  
+  /* Board card text */
+  .board-card__title {
+    color: #555555;
+  }
+}
 
 /* ----- Print Styles ----- */
 @media print {
